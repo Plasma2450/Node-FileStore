@@ -1,0 +1,15 @@
+html
+    head
+        title Login
+    body
+        h2 Login to your account
+        form(action='./api/login', method='post')
+            label(for='username') Username:
+            input(type='text', name='username', style='display:block;')
+
+
+            label(for='password') Password:
+            input(type='password', name='password', style='display:block;')
+
+            
+            button(type='submit') Login
